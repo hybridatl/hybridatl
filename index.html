@@ -57,6 +57,16 @@
   .step-title{font-size:13px;font-weight:500;margin-bottom:3px}
   .step-desc{font-size:12px;color:var(--mu);font-weight:300;line-height:1.6}
   .step.last .step-num{color:var(--y)}
+  .reviews-section{padding:2.5rem 1.5rem;border-top:1px solid var(--br)}
+  .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--br);border:1px solid var(--br);margin-top:1.25rem}
+  .review-card{background:var(--mid);padding:1.5rem}
+  .review-stars{display:flex;gap:3px;margin-bottom:.75rem}
+  .star{width:13px;height:13px;min-width:13px;background:var(--y);clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+  .review-text{font-size:13px;color:var(--mu);line-height:1.7;font-weight:300;margin-bottom:1rem;font-style:italic}
+  .review-author{display:flex;align-items:center;gap:8px}
+  .review-avatar{width:28px;height:28px;border-radius:50%;background:#222;border:1px solid var(--br);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;color:var(--y);flex-shrink:0}
+  .review-name{font-size:12px;font-weight:500;color:var(--tx)}
+  .review-source{font-size:10px;color:var(--mu)}
   .book-section{padding:2.5rem 1.5rem;border-top:1px solid var(--br)}
   .book-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start}
   .book-intro h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);line-height:1;margin-bottom:.75rem}
@@ -95,7 +105,7 @@
   .cta-block p{color:#333;font-size:13px;margin-bottom:1.25rem;font-weight:300}
   .btn-dark{background:#000;color:var(--y);border:none;padding:12px 28px;font-size:13px;font-weight:500;font-family:'DM Sans',sans-serif;cursor:pointer;border-radius:2px;letter-spacing:.5px;text-decoration:none;display:inline-block}
   .footer-lock{background:#0a0a0a;border-top:1px solid var(--br);padding:10px 1.5rem;text-align:right}
-  .lock-btn{background:none;border:none;color:#2a2a2a;font-size:11px;cursor:pointer;font-family:'DM Sans',sans-serif;letter-spacing:1px}
+  .lock-btn{background:none;border:none;color:#2a2a2a;font-size:11px;cursor:pointer;font-family:'DM Sans',sans-serif}
   .lock-btn:hover{color:var(--mu)}
   .owner-overlay{display:none;background:rgba(0,0,0,0.85);padding:2rem 1.5rem}
   .owner-overlay.open{display:block}
@@ -119,6 +129,7 @@
     .trust-bar{grid-template-columns:1fr 1fr}
     .pricing-grid{grid-template-columns:1fr}
     .steps{grid-template-columns:1fr 1fr}
+    .reviews-grid{grid-template-columns:1fr}
     .book-grid{grid-template-columns:1fr}
   }
 </style>
@@ -160,7 +171,7 @@
   <div class="trust-item"><div class="trust-val">$0</div><div class="trust-lbl">Install cost</div></div>
   <div class="trust-item"><div class="trust-val">~1hr</div><div class="trust-lbl">Typical install</div></div>
   <div class="trust-item"><div class="trust-val">50%+</div><div class="trust-lbl">vs dealership</div></div>
-  <div class="trust-item"><div class="trust-val">ATL</div><div class="trust-lbl">Metro coverage</div></div>
+  <div class="trust-item"><div class="trust-val">5.0</div><div class="trust-lbl">Star rating</div></div>
 </div>
 
 <div class="section">
@@ -208,6 +219,46 @@
   </div>
 </div>
 
+<div class="reviews-section">
+  <div class="sec-label">Customer reviews</div>
+  <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);line-height:1;margin-bottom:1.25rem">What people<br>are saying.</h2>
+  <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.25rem">
+    <div style="font-family:'Bebas Neue',sans-serif;font-size:3.5rem;color:var(--y);line-height:1">5.0</div>
+    <div>
+      <div style="display:flex;gap:3px;margin-bottom:4px">
+        <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
+      </div>
+      <div style="font-size:12px;color:var(--mu)">3 reviews · Facebook Marketplace</div>
+    </div>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+      <p class="review-text">"After checking many local mechanics specializing in this, I found a refurbished hybrid battery and installation for a very good price near Alpharetta. I was very impressed with Iurii's knowledge, skill level and honesty. My purchase came with a nice warranty. I only give positive reviews for excellent craftsmanship and service and I highly recommend Iurii for Prius hybrid battery service."</p>
+      <div class="review-author">
+        <div class="review-avatar">C</div>
+        <div><div class="review-name">Crosby</div><div class="review-source">Facebook Marketplace</div></div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+      <p class="review-text">"Very flexible to schedule with, good communication, and very polite and nice in person!"</p>
+      <div class="review-author">
+        <div class="review-avatar">J</div>
+        <div><div class="review-name">Jessica</div><div class="review-source">Facebook Marketplace</div></div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+      <p class="review-text">"Guy came to my house, hooked up scanner and told me everything that it needed. Super fast install on new hybrid battery!"</p>
+      <div class="review-author">
+        <div class="review-avatar">V</div>
+        <div><div class="review-name">Vincent</div><div class="review-source">Facebook Marketplace</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="book-section" id="book">
   <div class="book-grid">
     <div class="book-intro">
@@ -225,10 +276,7 @@
       <div class="chat-box">
         <div class="chat-hdr">
           <div class="chat-av">H</div>
-          <div>
-            <div class="chat-nm">HybridATL Support</div>
-            <div class="chat-st">Online now</div>
-          </div>
+          <div><div class="chat-nm">HybridATL Support</div><div class="chat-st">Online now</div></div>
         </div>
         <div class="chat-msgs" id="chat-msgs"></div>
         <div class="chat-input-row" id="chat-input-row">
@@ -279,91 +327,55 @@
 </div>
 
 <script>
-  const DEFAULT_URL = 'https://www.facebook.com/marketplace/item/1217847213519432/';
-  const STORAGE_KEY = 'hybridatl_listing_url';
-  const OWNER_PW = 'Password2@';
+  const DEFAULT_URL='https://www.facebook.com/marketplace/item/1217847213519432/';
+  const STORAGE_KEY='hybridatl_listing_url';
+  const OWNER_PW='Password2@';
 
-  function getListingUrl(){
-    return localStorage.getItem(STORAGE_KEY) || DEFAULT_URL;
-  }
-
+  function getListingUrl(){return localStorage.getItem(STORAGE_KEY)||DEFAULT_URL;}
   function applyListingUrl(){
-    const url = getListingUrl();
-    document.getElementById('hero-fb-btn').href = url;
-    document.getElementById('cta-fb-btn').href = url;
-    const cur = document.getElementById('owner-current');
-    if(cur) cur.textContent = 'Current: ' + url;
+    const url=getListingUrl();
+    document.getElementById('hero-fb-btn').href=url;
+    document.getElementById('cta-fb-btn').href=url;
+    const cur=document.getElementById('owner-current');
+    if(cur)cur.textContent='Current: '+url;
   }
-
   function saveLink(){
-    const val = document.getElementById('owner-inp').value.trim();
-    const status = document.getElementById('owner-status');
-    if(!val || !val.startsWith('http')){ status.style.color='#E24B4A'; status.textContent='Please paste a valid URL.'; return; }
-    localStorage.setItem(STORAGE_KEY, val);
-    document.getElementById('hero-fb-btn').href = val;
-    document.getElementById('cta-fb-btn').href = val;
-    document.getElementById('owner-current').textContent = 'Current: ' + val;
-    document.getElementById('owner-inp').value = '';
-    status.style.color='#4CAF50'; status.textContent='Saved! All buttons updated.';
-    setTimeout(()=>{ status.textContent=''; }, 3000);
+    const val=document.getElementById('owner-inp').value.trim();
+    const status=document.getElementById('owner-status');
+    if(!val||!val.startsWith('http')){status.style.color='#E24B4A';status.textContent='Please paste a valid URL.';return;}
+    localStorage.setItem(STORAGE_KEY,val);
+    document.getElementById('hero-fb-btn').href=val;
+    document.getElementById('cta-fb-btn').href=val;
+    document.getElementById('owner-current').textContent='Current: '+val;
+    document.getElementById('owner-inp').value='';
+    status.style.color='#4CAF50';status.textContent='Saved! All buttons updated.';
+    setTimeout(()=>{status.textContent='';},3000);
   }
-
-  let unlocked = false;
-
+  let unlocked=false;
   function toggleOwnerPanel(){
-    const overlay = document.getElementById('owner-overlay');
-    if(overlay.classList.contains('open')){ closePanel(); }
-    else{
-      overlay.classList.add('open');
-      if(!unlocked){
-        document.getElementById('pw-section').style.display='block';
-        document.getElementById('panel-section').classList.remove('visible');
-        setTimeout(()=>document.getElementById('pw-inp').focus(), 50);
-      } else { showPanel(); }
-    }
+    const o=document.getElementById('owner-overlay');
+    if(o.classList.contains('open')){closePanel();}
+    else{o.classList.add('open');if(!unlocked){document.getElementById('pw-section').style.display='block';document.getElementById('panel-section').classList.remove('visible');setTimeout(()=>document.getElementById('pw-inp').focus(),50);}else{showPanel();}}
   }
-
-  function closePanel(){
-    document.getElementById('owner-overlay').classList.remove('open');
-    document.getElementById('pw-err').textContent='';
-    document.getElementById('pw-inp').value='';
-  }
-
+  function closePanel(){document.getElementById('owner-overlay').classList.remove('open');document.getElementById('pw-err').textContent='';document.getElementById('pw-inp').value='';}
   function checkPw(){
-    const val = document.getElementById('pw-inp').value;
-    if(val === OWNER_PW){
-      unlocked = true;
-      document.getElementById('pw-section').style.display='none';
-      showPanel();
-    } else {
-      document.getElementById('pw-err').textContent='Incorrect password.';
-      document.getElementById('pw-inp').value='';
-      document.getElementById('pw-inp').focus();
-    }
+    const val=document.getElementById('pw-inp').value;
+    if(val===OWNER_PW){unlocked=true;document.getElementById('pw-section').style.display='none';showPanel();}
+    else{document.getElementById('pw-err').textContent='Incorrect password.';document.getElementById('pw-inp').value='';document.getElementById('pw-inp').focus();}
   }
-
-  function showPanel(){
-    document.getElementById('panel-section').classList.add('visible');
-    applyListingUrl();
-  }
+  function showPanel(){document.getElementById('panel-section').classList.add('visible');applyListingUrl();}
 
   const hs=[72,85,91,78,88,82,95,89,76,93,80,87,70,83];
   ['mg1','mg2'].forEach((id,gi)=>{
     const g=document.getElementById(id);
-    for(let i=0;i<7;i++){
-      const m=document.createElement('div'); m.className='mod';
-      const n=document.createElement('div'); n.className='mod-in';
-      n.style.height=hs[gi*7+i]+'%'; m.appendChild(n); g.appendChild(m);
-    }
+    for(let i=0;i<7;i++){const m=document.createElement('div');m.className='mod';const n=document.createElement('div');n.className='mod-in';n.style.height=hs[gi*7+i]+'%';m.appendChild(n);g.appendChild(m);}
   });
-  let t=0;
-  setInterval(()=>{ t++; document.getElementById('vd').textContent=(201.6+Math.sin(t*0.05)*0.8).toFixed(1); },200);
+  let t=0;setInterval(()=>{t++;document.getElementById('vd').textContent=(201.6+Math.sin(t*0.05)*0.8).toFixed(1);},200);
 
   const msgsEl=document.getElementById('chat-msgs');
   const inp=document.getElementById('chat-inp');
   const mBtn=document.getElementById('msng-btn');
   const inputRow=document.getElementById('chat-input-row');
-
   const steps=[
     {q:"Hi! What's your name?",key:'name',type:'text'},
     {q:"What's the best phone number to reach you?",key:'phone',type:'text'},
@@ -371,51 +383,16 @@
     {q:"Has a scanner confirmed your hybrid battery is the issue?",key:'scanner',type:'options',options:["Yes — scanner confirmed","No — not scanned yet","Not sure"]},
     {q:"When would you like to schedule the install?",key:'schedule',type:'options',options:["This week (ASAP)","Next week","Weekdays only","Weekends only","Flexible"]}
   ];
-  let step=0; const data={};
-
-  function addMsg(txt,who){
-    const d=document.createElement('div'); d.className='cmsg '+who;
-    if(who==='bot') d.innerHTML='<div class="cav">H</div><div class="cbub">'+txt+'</div>';
-    else d.innerHTML='<div class="cbub">'+txt+'</div>';
-    msgsEl.appendChild(d); msgsEl.scrollTop=msgsEl.scrollHeight;
-  }
-  function addOpts(opts){
-    const r=document.createElement('div'); r.className='opts-row'; r.id='opts-row';
-    opts.forEach(o=>{const b=document.createElement('button');b.className='opt-btn';b.textContent=o;b.onclick=()=>pick(o);r.appendChild(b);});
-    msgsEl.appendChild(r); msgsEl.scrollTop=msgsEl.scrollHeight;
-  }
-  function showTyping(){
-    const d=document.createElement('div'); d.className='cmsg bot'; d.id='typing';
-    d.innerHTML='<div class="cav">H</div><div class="typing-ind"><span></span><span></span><span></span></div>';
-    msgsEl.appendChild(d); msgsEl.scrollTop=msgsEl.scrollHeight;
-  }
+  let step=0;const data={};
+  function addMsg(txt,who){const d=document.createElement('div');d.className='cmsg '+who;if(who==='bot')d.innerHTML='<div class="cav">H</div><div class="cbub">'+txt+'</div>';else d.innerHTML='<div class="cbub">'+txt+'</div>';msgsEl.appendChild(d);msgsEl.scrollTop=msgsEl.scrollHeight;}
+  function addOpts(opts){const r=document.createElement('div');r.className='opts-row';r.id='opts-row';opts.forEach(o=>{const b=document.createElement('button');b.className='opt-btn';b.textContent=o;b.onclick=()=>pick(o);r.appendChild(b);});msgsEl.appendChild(r);msgsEl.scrollTop=msgsEl.scrollHeight;}
+  function showTyping(){const d=document.createElement('div');d.className='cmsg bot';d.id='typing';d.innerHTML='<div class="cav">H</div><div class="typing-ind"><span></span><span></span><span></span></div>';msgsEl.appendChild(d);msgsEl.scrollTop=msgsEl.scrollHeight;}
   function rmTyping(){const t=document.getElementById('typing');if(t)t.remove();}
   function rmOpts(){const r=document.getElementById('opts-row');if(r)r.remove();}
-  function askStep(i){
-    if(i>=steps.length){finish();return;}
-    const s=steps[i]; showTyping();
-    setTimeout(()=>{
-      rmTyping(); addMsg(s.q,'bot');
-      if(s.type==='options'){inp.disabled=true;inp.placeholder='Choose an option above';addOpts(s.options);}
-      else{inp.disabled=false;inp.placeholder='Type your answer...';inp.focus();}
-    },600);
-  }
+  function askStep(i){if(i>=steps.length){finish();return;}const s=steps[i];showTyping();setTimeout(()=>{rmTyping();addMsg(s.q,'bot');if(s.type==='options'){inp.disabled=true;inp.placeholder='Choose an option above';addOpts(s.options);}else{inp.disabled=false;inp.placeholder='Type your answer...';inp.focus();}},600);}
   function pick(val){rmOpts();data[steps[step].key]=val;addMsg(val,'user');step++;askStep(step);}
-  function sendMsg(){
-    const val=inp.value.trim();if(!val||steps[step].type==='options')return;
-    inp.value='';data[steps[step].key]=val;addMsg(val,'user');step++;askStep(step);
-  }
-  function finish(){
-    inp.disabled=true;inputRow.style.display='none';showTyping();
-    setTimeout(()=>{
-      rmTyping();
-      addMsg('Perfect, '+data.name+'! Tap the button below to send your info and complete your booking.','bot');
-      const txt=encodeURIComponent('Hi HybridATL! I\'d like to book a Prius battery install.\n\nName: '+data.name+'\nPhone: '+data.phone+'\nLocation: '+data.location+'\nScanner check: '+data.scanner+'\nSchedule: '+data.schedule);
-      mBtn.href='https://m.me/iuriibab?text='+txt;
-      mBtn.style.display='flex';
-      msgsEl.scrollTop=msgsEl.scrollHeight;
-    },800);
-  }
+  function sendMsg(){const val=inp.value.trim();if(!val||steps[step].type==='options')return;inp.value='';data[steps[step].key]=val;addMsg(val,'user');step++;askStep(step);}
+  function finish(){inp.disabled=true;inputRow.style.display='none';showTyping();setTimeout(()=>{rmTyping();addMsg('Perfect, '+data.name+'! Tap the button below to send your info and complete your booking.','bot');const txt=encodeURIComponent('Hi HybridATL! I\'d like to book a Prius battery install.\n\nName: '+data.name+'\nPhone: '+data.phone+'\nLocation: '+data.location+'\nScanner check: '+data.scanner+'\nSchedule: '+data.schedule);mBtn.href='https://m.me/iuriibab?text='+txt;mBtn.style.display='flex';msgsEl.scrollTop=msgsEl.scrollHeight;},800);}
 
   applyListingUrl();
   askStep(0);
