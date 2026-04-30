@@ -57,6 +57,23 @@
   .step-title{font-size:13px;font-weight:500;margin-bottom:3px}
   .step-desc{font-size:12px;color:var(--mu);font-weight:300;line-height:1.6}
   .step.last .step-num{color:var(--y)}
+  .contact-section{padding:2.5rem 1.5rem;border-top:1px solid var(--br)}
+  .contact-section h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);line-height:1;margin-bottom:.5rem}
+  .contact-sub{font-size:13px;color:var(--mu);margin-bottom:1.5rem;font-weight:300}
+  .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--br);border:1px solid var(--br)}
+  .contact-card{background:var(--mid);padding:1.75rem;display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px}
+  .contact-icon{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .contact-icon.call{background:#1a2a1a}
+  .contact-icon.sms{background:#2a2a10}
+  .contact-icon.wa{background:#1a251a}
+  .contact-label{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--mu);font-weight:500}
+  .contact-title{font-size:15px;font-weight:500;color:var(--tx)}
+  .contact-desc{font-size:12px;color:var(--mu);font-weight:300;line-height:1.6}
+  .contact-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;font-size:13px;font-weight:500;font-family:'DM Sans',sans-serif;cursor:pointer;border-radius:2px;text-decoration:none;border:none;width:100%;letter-spacing:.5px}
+  .contact-btn.call{background:#4CAF50;color:#fff}
+  .contact-btn.sms{background:var(--y);color:#000}
+  .contact-btn.wa{background:#25D366;color:#fff}
+  .contact-btn:hover{opacity:.88}
   .compare-section{padding:2.5rem 1.5rem;border-top:1px solid var(--br)}
   .compare-section h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);line-height:1;margin-bottom:.5rem}
   .compare-sub{font-size:13px;color:var(--mu);margin-bottom:1.5rem;font-weight:300}
@@ -153,6 +170,7 @@
     .trust-bar{grid-template-columns:1fr 1fr}
     .pricing-grid{grid-template-columns:1fr}
     .steps{grid-template-columns:1fr 1fr}
+    .contact-grid{grid-template-columns:1fr}
     .reviews-grid{grid-template-columns:1fr}
     .book-grid{grid-template-columns:1fr}
     .winner-bar{grid-template-columns:1fr 1fr}
@@ -237,10 +255,54 @@
   <div class="sec-label">The process</div>
   <h2>Four steps.<br>No surprises.</h2>
   <div class="steps">
-    <div class="step"><div class="step-num">01</div><div class="step-title">Contact</div><div class="step-desc">Message on FB Marketplace or chat below. Fast response, no runaround.</div></div>
+    <div class="step"><div class="step-num">01</div><div class="step-title">Contact</div><div class="step-desc">Call, text, WhatsApp or chat below. Fast response, no runaround.</div></div>
     <div class="step"><div class="step-num">02</div><div class="step-title">Schedule</div><div class="step-desc">Pick a time & location in the Atlanta metro. Home, office, parking lot.</div></div>
     <div class="step"><div class="step-num">03</div><div class="step-title">Install</div><div class="step-desc">Old pack out, new pack in. Prius running. About one hour. Old battery recycled.</div></div>
     <div class="step last"><div class="step-num">04</div><div class="step-title">Choose warranty</div><div class="step-desc">See it running, then pick $600 (3 mo) or $750 (6 mo). Your call.</div></div>
+  </div>
+</div>
+
+<div class="contact-section">
+  <div class="sec-label">Get in touch</div>
+  <h2>Contact us<br>your way.</h2>
+  <p class="contact-sub">Tap a button below — we respond fast, 7 days a week.</p>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="contact-icon call">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="#4CAF50"/></svg>
+      </div>
+      <div class="contact-label">Phone call</div>
+      <div class="contact-title">Call us directly</div>
+      <div class="contact-desc">Tap to connect instantly. Available 7 days a week across Atlanta metro.</div>
+      <a class="contact-btn call" href="tel:+14046924645">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        Call now
+      </a>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon sms">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" fill="#F5C842"/></svg>
+      </div>
+      <div class="contact-label">Text message</div>
+      <div class="contact-title">Send us a text</div>
+      <div class="contact-desc">Tap to open a pre-filled text message. We reply within minutes.</div>
+      <a class="contact-btn sms" href="sms:+14046924645&body=Hi%20HybridATL!%20I%27m%20interested%20in%20a%20Prius%20battery%20install.">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="black"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+        Send text
+      </a>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon wa">
+        <svg width="26" height="26" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" fill="#25D366"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.413A9.953 9.953 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a7.95 7.95 0 01-4.031-1.094l-.29-.172-2.953.838.838-2.872-.19-.302A7.951 7.951 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z" fill="#25D366"/></svg>
+      </div>
+      <div class="contact-label">WhatsApp</div>
+      <div class="contact-title">Message on WhatsApp</div>
+      <div class="contact-desc">Tap to open WhatsApp with a pre-filled message. Fast and easy.</div>
+      <a class="contact-btn wa" href="https://wa.me/14046924645?text=Hi%20HybridATL!%20I%27m%20interested%20in%20a%20Prius%20battery%20install." target="_blank">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.413A9.953 9.953 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a7.95 7.95 0 01-4.031-1.094l-.29-.172-2.953.838.838-2.872-.19-.302A7.951 7.951 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z"/></svg>
+        WhatsApp
+      </a>
+    </div>
   </div>
 </div>
 
@@ -261,86 +323,16 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td class="feature">All-in price</td>
-          <td class="us"><span class="price-lo">$600–$750</span></td>
-          <td><span class="price-hi">$1,100+</span></td>
-          <td><span class="price-hi">$950–$2,000</span></td>
-          <td><span class="price-hi">$1,400–$2,000</span></td>
-          <td><span class="price-hi">$3,500–$5,500</span></td>
-        </tr>
-        <tr>
-          <td class="feature">Mobile install</td>
-          <td class="us"><span class="yes">We come to you</span></td>
-          <td><span class="no">Drop-off required</span></td>
-          <td><span class="neu">Some areas only</span></td>
-          <td><span class="no">You install it</span></td>
-          <td><span class="no">Shop only</span></td>
-        </tr>
-        <tr>
-          <td class="feature">Install cost</td>
-          <td class="us"><span class="yes">FREE</span></td>
-          <td><span class="no">$200–$400</span></td>
-          <td><span class="no">Varies</span></td>
-          <td><span class="no">$300–$400 extra</span></td>
-          <td><span class="no">Included but costly</span></td>
-        </tr>
-        <tr>
-          <td class="feature">Battery balanced</td>
-          <td class="us"><span class="yes">Yes — every cell</span></td>
-          <td><span class="neu">Sometimes</span></td>
-          <td><span class="yes">Yes</span></td>
-          <td><span class="neu">Varies by seller</span></td>
-          <td><span class="yes">OEM new</span></td>
-        </tr>
-        <tr>
-          <td class="feature">Warranty</td>
-          <td class="us"><span class="yes">3 or 6 months</span></td>
-          <td><span class="neu">Varies</span></td>
-          <td><span class="neu">Varies by package</span></td>
-          <td><span class="neu">3–6 yr (no install)</span></td>
-          <td><span class="yes">OEM warranty</span></td>
-        </tr>
-        <tr>
-          <td class="feature">Warranty chosen</td>
-          <td class="us"><span class="yes">After install — you decide</span></td>
-          <td><span class="no">Before purchase</span></td>
-          <td><span class="no">Before purchase</span></td>
-          <td><span class="no">Before purchase</span></td>
-          <td><span class="no">Before purchase</span></td>
-        </tr>
-        <tr>
-          <td class="feature">Scanner check</td>
-          <td class="us"><span class="yes">Included on site</span></td>
-          <td><span class="neu">Sometimes</span></td>
-          <td><span class="no">Not included</span></td>
-          <td><span class="no">Not included</span></td>
-          <td><span class="yes">Full diagnostic</span></td>
-        </tr>
-        <tr>
-          <td class="feature">Old battery recycled</td>
-          <td class="us"><span class="yes">Always</span></td>
-          <td><span class="neu">Sometimes</span></td>
-          <td><span class="neu">Varies</span></td>
-          <td><span class="no">Your problem</span></td>
-          <td><span class="yes">Yes</span></td>
-        </tr>
-        <tr>
-          <td class="feature">Typical wait time</td>
-          <td class="us"><span class="yes">Same week</span></td>
-          <td><span class="no">1–2 weeks</span></td>
-          <td><span class="no">Shipping + install</span></td>
-          <td><span class="no">Shipping time</span></td>
-          <td><span class="no">1–3 weeks</span></td>
-        </tr>
-        <tr>
-          <td class="feature">Savings vs dealership</td>
-          <td class="us"><span class="yes">Up to 85% less</span></td>
-          <td><span class="neu">~70% less</span></td>
-          <td><span class="neu">~60% less</span></td>
-          <td><span class="neu">~60% less</span></td>
-          <td><span class="no">—</span></td>
-        </tr>
+        <tr><td class="feature">All-in price</td><td class="us"><span class="price-lo">$600–$750</span></td><td><span class="price-hi">$1,100+</span></td><td><span class="price-hi">$950–$2,000</span></td><td><span class="price-hi">$1,400–$2,000</span></td><td><span class="price-hi">$3,500–$5,500</span></td></tr>
+        <tr><td class="feature">Mobile install</td><td class="us"><span class="yes">We come to you</span></td><td><span class="no">Drop-off required</span></td><td><span class="neu">Some areas only</span></td><td><span class="no">You install it</span></td><td><span class="no">Shop only</span></td></tr>
+        <tr><td class="feature">Install cost</td><td class="us"><span class="yes">FREE</span></td><td><span class="no">$200–$400</span></td><td><span class="no">Varies</span></td><td><span class="no">$300–$400 extra</span></td><td><span class="no">Included but costly</span></td></tr>
+        <tr><td class="feature">Battery balanced</td><td class="us"><span class="yes">Yes — every cell</span></td><td><span class="neu">Sometimes</span></td><td><span class="yes">Yes</span></td><td><span class="neu">Varies by seller</span></td><td><span class="yes">OEM new</span></td></tr>
+        <tr><td class="feature">Warranty</td><td class="us"><span class="yes">3 or 6 months</span></td><td><span class="neu">Varies</span></td><td><span class="neu">Varies by package</span></td><td><span class="neu">3–6 yr (no install)</span></td><td><span class="yes">OEM warranty</span></td></tr>
+        <tr><td class="feature">Warranty chosen</td><td class="us"><span class="yes">After install — you decide</span></td><td><span class="no">Before purchase</span></td><td><span class="no">Before purchase</span></td><td><span class="no">Before purchase</span></td><td><span class="no">Before purchase</span></td></tr>
+        <tr><td class="feature">Scanner check</td><td class="us"><span class="yes">Included on site</span></td><td><span class="neu">Sometimes</span></td><td><span class="no">Not included</span></td><td><span class="no">Not included</span></td><td><span class="yes">Full diagnostic</span></td></tr>
+        <tr><td class="feature">Old battery recycled</td><td class="us"><span class="yes">Always</span></td><td><span class="neu">Sometimes</span></td><td><span class="neu">Varies</span></td><td><span class="no">Your problem</span></td><td><span class="yes">Yes</span></td></tr>
+        <tr><td class="feature">Typical wait time</td><td class="us"><span class="yes">Same week</span></td><td><span class="no">1–2 weeks</span></td><td><span class="no">Shipping + install</span></td><td><span class="no">Shipping time</span></td><td><span class="no">1–3 weeks</span></td></tr>
+        <tr><td class="feature">Savings vs dealership</td><td class="us"><span class="yes">Up to 85% less</span></td><td><span class="neu">~70% less</span></td><td><span class="neu">~60% less</span></td><td><span class="neu">~60% less</span></td><td><span class="no">—</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -358,9 +350,7 @@
   <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.25rem">
     <div style="font-family:'Bebas Neue',sans-serif;font-size:3.5rem;color:var(--y);line-height:1">5.0</div>
     <div>
-      <div style="display:flex;gap:3px;margin-bottom:4px">
-        <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
-      </div>
+      <div style="display:flex;gap:3px;margin-bottom:4px"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
       <div style="font-size:12px;color:var(--mu)">3 reviews · Facebook Marketplace</div>
     </div>
   </div>
@@ -368,26 +358,17 @@
     <div class="review-card">
       <div class="review-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
       <p class="review-text">"After checking many local mechanics specializing in this, I found a refurbished hybrid battery and installation for a very good price near Alpharetta. I was very impressed with Iurii's knowledge, skill level and honesty. My purchase came with a nice warranty. I only give positive reviews for excellent craftsmanship and service and I highly recommend Iurii for Prius hybrid battery service."</p>
-      <div class="review-author">
-        <div class="review-avatar">C</div>
-        <div><div class="review-name">Crosby</div><div class="review-source">Facebook Marketplace</div></div>
-      </div>
+      <div class="review-author"><div class="review-avatar">C</div><div><div class="review-name">Crosby</div><div class="review-source">Facebook Marketplace</div></div></div>
     </div>
     <div class="review-card">
       <div class="review-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
       <p class="review-text">"Very flexible to schedule with, good communication, and very polite and nice in person!"</p>
-      <div class="review-author">
-        <div class="review-avatar">J</div>
-        <div><div class="review-name">Jessica</div><div class="review-source">Facebook Marketplace</div></div>
-      </div>
+      <div class="review-author"><div class="review-avatar">J</div><div><div class="review-name">Jessica</div><div class="review-source">Facebook Marketplace</div></div></div>
     </div>
     <div class="review-card">
       <div class="review-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
       <p class="review-text">"Guy came to my house, hooked up scanner and told me everything that it needed. Super fast install on new hybrid battery!"</p>
-      <div class="review-author">
-        <div class="review-avatar">V</div>
-        <div><div class="review-name">Vincent</div><div class="review-source">Facebook Marketplace</div></div>
-      </div>
+      <div class="review-author"><div class="review-avatar">V</div><div><div class="review-name">Vincent</div><div class="review-source">Facebook Marketplace</div></div></div>
     </div>
   </div>
 </div>
@@ -463,59 +444,22 @@
   const DEFAULT_URL='https://www.facebook.com/marketplace/item/1217847213519432/';
   const STORAGE_KEY='hybridatl_listing_url';
   const OWNER_PW='Password2@';
-
   function getListingUrl(){return localStorage.getItem(STORAGE_KEY)||DEFAULT_URL;}
-  function applyListingUrl(){
-    const url=getListingUrl();
-    document.getElementById('hero-fb-btn').href=url;
-    document.getElementById('cta-fb-btn').href=url;
-    const cur=document.getElementById('owner-current');
-    if(cur)cur.textContent='Current: '+url;
-  }
-  function saveLink(){
-    const val=document.getElementById('owner-inp').value.trim();
-    const status=document.getElementById('owner-status');
-    if(!val||!val.startsWith('http')){status.style.color='#E24B4A';status.textContent='Please paste a valid URL.';return;}
-    localStorage.setItem(STORAGE_KEY,val);
-    document.getElementById('hero-fb-btn').href=val;
-    document.getElementById('cta-fb-btn').href=val;
-    document.getElementById('owner-current').textContent='Current: '+val;
-    document.getElementById('owner-inp').value='';
-    status.style.color='#4CAF50';status.textContent='Saved! All buttons updated.';
-    setTimeout(()=>{status.textContent='';},3000);
-  }
+  function applyListingUrl(){const url=getListingUrl();document.getElementById('hero-fb-btn').href=url;document.getElementById('cta-fb-btn').href=url;const cur=document.getElementById('owner-current');if(cur)cur.textContent='Current: '+url;}
+  function saveLink(){const val=document.getElementById('owner-inp').value.trim();const status=document.getElementById('owner-status');if(!val||!val.startsWith('http')){status.style.color='#E24B4A';status.textContent='Please paste a valid URL.';return;}localStorage.setItem(STORAGE_KEY,val);document.getElementById('hero-fb-btn').href=val;document.getElementById('cta-fb-btn').href=val;document.getElementById('owner-current').textContent='Current: '+val;document.getElementById('owner-inp').value='';status.style.color='#4CAF50';status.textContent='Saved! All buttons updated.';setTimeout(()=>{status.textContent='';},3000);}
   let unlocked=false;
-  function toggleOwnerPanel(){
-    const o=document.getElementById('owner-overlay');
-    if(o.classList.contains('open')){closePanel();}
-    else{o.classList.add('open');if(!unlocked){document.getElementById('pw-section').style.display='block';document.getElementById('panel-section').classList.remove('visible');setTimeout(()=>document.getElementById('pw-inp').focus(),50);}else{showPanel();}}
-  }
+  function toggleOwnerPanel(){const o=document.getElementById('owner-overlay');if(o.classList.contains('open')){closePanel();}else{o.classList.add('open');if(!unlocked){document.getElementById('pw-section').style.display='block';document.getElementById('panel-section').classList.remove('visible');setTimeout(()=>document.getElementById('pw-inp').focus(),50);}else{showPanel();}}}
   function closePanel(){document.getElementById('owner-overlay').classList.remove('open');document.getElementById('pw-err').textContent='';document.getElementById('pw-inp').value='';}
-  function checkPw(){
-    const val=document.getElementById('pw-inp').value;
-    if(val===OWNER_PW){unlocked=true;document.getElementById('pw-section').style.display='none';showPanel();}
-    else{document.getElementById('pw-err').textContent='Incorrect password.';document.getElementById('pw-inp').value='';document.getElementById('pw-inp').focus();}
-  }
+  function checkPw(){const val=document.getElementById('pw-inp').value;if(val===OWNER_PW){unlocked=true;document.getElementById('pw-section').style.display='none';showPanel();}else{document.getElementById('pw-err').textContent='Incorrect password.';document.getElementById('pw-inp').value='';document.getElementById('pw-inp').focus();}}
   function showPanel(){document.getElementById('panel-section').classList.add('visible');applyListingUrl();}
-
   const hs=[72,85,91,78,88,82,95,89,76,93,80,87,70,83];
-  ['mg1','mg2'].forEach((id,gi)=>{
-    const g=document.getElementById(id);
-    for(let i=0;i<7;i++){const m=document.createElement('div');m.className='mod';const n=document.createElement('div');n.className='mod-in';n.style.height=hs[gi*7+i]+'%';m.appendChild(n);g.appendChild(m);}
-  });
+  ['mg1','mg2'].forEach((id,gi)=>{const g=document.getElementById(id);for(let i=0;i<7;i++){const m=document.createElement('div');m.className='mod';const n=document.createElement('div');n.className='mod-in';n.style.height=hs[gi*7+i]+'%';m.appendChild(n);g.appendChild(m);}});
   let t=0;setInterval(()=>{t++;document.getElementById('vd').textContent=(201.6+Math.sin(t*0.05)*0.8).toFixed(1);},200);
-
   const msgsEl=document.getElementById('chat-msgs');
   const inp=document.getElementById('chat-inp');
   const mBtn=document.getElementById('msng-btn');
   const inputRow=document.getElementById('chat-input-row');
-  const steps=[
-    {q:"Hi! What's your name?",key:'name',type:'text'},
-    {q:"What's the best phone number to reach you?",key:'phone',type:'text'},
-    {q:"What area of Atlanta are you in? (city or ZIP)",key:'location',type:'text'},
-    {q:"Has a scanner confirmed your hybrid battery is the issue?",key:'scanner',type:'options',options:["Yes — scanner confirmed","No — not scanned yet","Not sure"]},
-    {q:"When would you like to schedule the install?",key:'schedule',type:'options',options:["This week (ASAP)","Next week","Weekdays only","Weekends only","Flexible"]}
-  ];
+  const steps=[{q:"Hi! What's your name?",key:'name',type:'text'},{q:"What's the best phone number to reach you?",key:'phone',type:'text'},{q:"What area of Atlanta are you in? (city or ZIP)",key:'location',type:'text'},{q:"Has a scanner confirmed your hybrid battery is the issue?",key:'scanner',type:'options',options:["Yes — scanner confirmed","No — not scanned yet","Not sure"]},{q:"When would you like to schedule the install?",key:'schedule',type:'options',options:["This week (ASAP)","Next week","Weekdays only","Weekends only","Flexible"]}];
   let step=0;const data={};
   function addMsg(txt,who){const d=document.createElement('div');d.className='cmsg '+who;if(who==='bot')d.innerHTML='<div class="cav">H</div><div class="cbub">'+txt+'</div>';else d.innerHTML='<div class="cbub">'+txt+'</div>';msgsEl.appendChild(d);msgsEl.scrollTop=msgsEl.scrollHeight;}
   function addOpts(opts){const r=document.createElement('div');r.className='opts-row';r.id='opts-row';opts.forEach(o=>{const b=document.createElement('button');b.className='opt-btn';b.textContent=o;b.onclick=()=>pick(o);r.appendChild(b);});msgsEl.appendChild(r);msgsEl.scrollTop=msgsEl.scrollHeight;}
@@ -526,7 +470,6 @@
   function pick(val){rmOpts();data[steps[step].key]=val;addMsg(val,'user');step++;askStep(step);}
   function sendMsg(){const val=inp.value.trim();if(!val||steps[step].type==='options')return;inp.value='';data[steps[step].key]=val;addMsg(val,'user');step++;askStep(step);}
   function finish(){inp.disabled=true;inputRow.style.display='none';showTyping();setTimeout(()=>{rmTyping();addMsg('Perfect, '+data.name+'! Tap the button below to send your info and complete your booking.','bot');const txt=encodeURIComponent('Hi HybridATL! I\'d like to book a Prius battery install.\n\nName: '+data.name+'\nPhone: '+data.phone+'\nLocation: '+data.location+'\nScanner check: '+data.scanner+'\nSchedule: '+data.schedule);mBtn.href='https://m.me/iuriibab?text='+txt;mBtn.style.display='flex';msgsEl.scrollTop=msgsEl.scrollHeight;},800);}
-
   applyListingUrl();
   askStep(0);
 </script>
